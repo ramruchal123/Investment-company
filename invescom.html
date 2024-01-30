@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Investing Company</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <h1>Welcome to Our Investing Company</h1>
+      <p>We help individuals and businesses grow their wealth through smart investments.</p>
+      <a href="#about" class="button">Learn More</a>
+    </section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We are a team of experienced investors and financial analysts who are dedicated to helping our clients achieve their financial goals.</p>
+      <p>With years of experience in the industry, we have the knowledge and expertise to make informed investment decisions that will maximize your returns.</p>
+    </section>
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Investment Portfolio Management</li>
+        <li>Retirement Planning</li>
+        <li>Estate Planning</li>
+        <li>Tax Planning</li>
+        <li>Risk Management</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="/submit_form" method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="account_type">Account Type:</label>
+        <select id="account_type" name="account_type">
+          <option value="personal">Personal</option>
+          <option value="business">Business</option>
+        </select>
+
+        <label for="profile_picture">Profile Picture:</label>
+        <input type="file" id="profile_picture" name="profile_picture" required>
+
+        <label for="terms_and_conditions">
+          I accept the terms and conditions:
+          <input type="checkbox" id="terms_and_conditions" name="terms_and_conditions" required>
+        </label>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Investing Company</p>
+  </footer>
+</body>
+</html>
